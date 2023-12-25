@@ -1,0 +1,176 @@
+/* html{
+    padding: 0;
+    margin: 0;
+} */
+body{
+    background-image: url('img/salon.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Sometype Mono', monospace;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+
+.nav {
+    /* background-color: rgb(234 253 179 / 21%); */
+    top: 0rem;
+    z-index: 3; 
+}
+
+
+.nav_list {
+    display: flex; /*горизонтальное расположение элементов*/
+    flex-flow: row nowrap; /*запрещает перенос строки*/
+    list-style: none; /*убирает точки перед названием*/
+
+    justify-content: center; 
+    padding-top: 5vh;
+    margin-right: 10vh;
+    gap: 2vh;
+    font-size: 4vh;
+  
+}
+
+.nav-item{
+    text-decoration: none;
+    color: rgb(222, 106, 34);
+    /* border-bottom: 1px solid rgb(222, 106, 57); */
+    padding: 1rem 0; /*размер шрифта корневого элемента. мы задали 
+    корневой элемент 16px*/
+}
+
+.nav-item:hover{
+    color: black;
+    border-bottom: 1px solid black;
+} 
+.nav-link {
+    padding: 2rem;
+    text-decoration: none;
+    border-left: 1px solid white;
+    /* color: #000000d9; */
+
+    color: white;
+    text-shadow: -2px 0px 18px rgba(0, 0, 0, 0.952); /*создали тень буквам*/
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-link:hover{  /*окрашивается при наведении мыши*/
+    background-color: #ffffff82;
+    color: #ff3600;;
+}
+
+
+.hearder {
+    color: white;
+    text-shadow: -2px 0px 18px rgb(0, 0, 0); /*создали тень буквам*/
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    align-items: center;
+
+}
+
+.hearder-caption{
+    text-align: center;
+    position: sticky;/*закрепить на экране при движении вниз*/
+    top: 1rem;
+    font-size: 3vh;
+}
+
+
+/* .brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    font-size: 7vh;
+    font-weight: bold;
+    font-family: 'Sometype Mono', monospace;
+    font-family: 'Urbanist', sans-serif;
+} */
+
+.description-services{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 35px;
+    color: black;
+    gap: 10vh;
+   
+}
+.description{
+    background-color: rgb(255 255 255 / 79%);
+    /* padding: 3px 10px;  */
+    border-radius: 25%;
+    
+ 
+}
+
+.service{
+    padding-top: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+}
+h3{
+    /* margin-left: 500px; */
+    padding: 3px 10px;
+    background-color:rgb(255 255 255 / 79%);
+    color:#382e2e;
+    border-radius: 25%;
+    width: max-content;
+    height: 45px;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.discount-sales{
+    /* display: flex;  */
+     align-items: center;
+    /* justify-content: start;  */
+     /* width: 100%; */
+      height: 30%;  
+    padding-top : 50px; 
+     /* margin-bottom: 40px;  */
+    
+}
+.sale{
+    background-color: white;
+    color: black;
+    /* font-size: 10px; */
+    width: 70vh;
+    margin-left: 60px;
+    padding: 20px 20px;
+    border: 1px solid #3006ac91;
+}
+.birthday{
+       margin-top: 5px;   
+    font-size: 20px;  
+    width: 70vh;
+    padding: 20px 20px;
+    margin-left: 60px; 
+    background-color: white;
+    color: black;
+    border: 1px solid #3006ac91;
+}
+ form{
+     /* display: flex;  */
+    align-items: center;
+    justify-content: center;
+}  
+ /* .container {
+    column-count: 2;
+    gap: 5px;
+  }  */

@@ -1,0 +1,88 @@
+
+html {
+    font-size: 16px;
+    
+}
+.address {
+text-align: end;
+}
+
+.address a {
+    color: rgb(187, 255, 0);
+    text-decoration: none;
+}
+.address a:hover { /*псевдоэлемент. Реагирует при наведении мыши*/
+    color: rgb(234, 0, 255);
+    font-size: 101%;
+}
+.nav {
+    background-color: rgba(253, 253, 179, 134);
+    position: sticky;/*закрепить меню*/
+    top: 0rem;
+    z-index: 3; 
+}
+.nav_list{
+    display: flex; /*горизонтальное расположение элементов*/
+    flex-flow: row nowrap; /*запрещает перенос строки*/
+    list-style: none; /*убирает точки перед названием*/
+}
+.nav-item{
+padding: 1rem 0; /*размер шрифта корневого элемента. мы задали 
+корневой элемент 16px*/
+}
+
+.nav-link {
+    padding: 1rem;
+    text-decoration: none;
+    border-left: 1px solid green;
+}
+.nav-link:hover{  /*окрашивается при наведении мыши*/
+    background-color: blueviolet;
+    color: red; 
+}
+.hero {
+    background-image: url('img/registr.jpg');  
+    background-attachment: fixed;/*создаем эффект ПАРОЛАКСА*/
+    background-repeat: no-repeat;
+    background-size: cover;/*чтобы картинка заняла все свободное пространство*/
+}
+.hearder {
+    color: white;
+    text-shadow: -2px 0px 18px rgb(0, 0, 0); /*создали тень буквам*/
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    align-items: center;
+
+}
+.hero-form{
+    display:flex;
+    flex-flow: column nowrap; /*чтобы форма расположилась в столбик*/
+    gap: .5rem;
+    border: 3px solid #004cff38;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:rgb(195 243 197 / 60%);
+   
+}
+.hearder-caption{
+    text-align: center;
+    position: sticky;/*закрепить на экране при движении вниз*/
+    top: 1rem;
+}
+.form-label{
+font-size: 1.5rem;
+}
+.form-input{
+    font-size: 1.5rem;
+    padding: .5rem;
+    border: 3px solid #005b805c;
+    border-radius: .5rem;
+}
+.form-btn{
+    font-size: 1.5rem;
+    padding: .5rem;
+    border: 3px solid white;
+    border-radius: .5rem;
+    background-color: #00ffd24f;
+}
